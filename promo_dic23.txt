@@ -1,8 +1,14 @@
 <Inicio>
-Realizar segmentación clientes in ('Slot','Mesas','Apuestas Deportivas','No Vertical')
+Realizar segmentación1 clientes in ('Slot','Mesas','Apuestas Deportivas','No Vertical')
+Realizar segmentación2 clientes in ('Online','Fisico','Mixto')
 Ejecutar validación para entrega de bonos
-     Regla_1: 'FreeSpins' <> ('Slots','Mesas')
-     Regla_2: 'FreeBets' <> ('Apuestas Deportivas')
-     Regla_3: 'Bono' <> ('No Vertical')
+     //Regla_1: 'FreeSpins' <> ('Slots','Mesas')
+     //Regla_2: 'FreeBets' <> ('Apuestas Deportivas')
+     //Regla_3: 'Bono' <> ('No Vertical')
+     Regla_4: 'Torneo_Slots' <> ('Slots','No Vertical','Mixto')
+     Regla_5: 'Torneo_Mesas' <> ('Slots','No Vertical','Mixto')
+     Regla_6: 'FreeSpins' <> ('Slots','Online')
+     Regla_7: 'FreeBets' <> ('Apuestas Deportivas','Online')
+     Regla_8: 'Bono' <> ('No Vertical','Online')
 Asignar promociones a cliente
 <FIN>
